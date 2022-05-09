@@ -1,0 +1,319 @@
+
+/* tous ce qui est en commun sur le site*/
+html {
+    font-size: 62.5%
+}
+* {
+    margin :0;
+    padding: 0;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+}
+.paragraphe a {
+    display: inline-block;
+        background-color: #72647B;
+        color:white;
+        padding: 15px 50px 15px 50px;
+        margin-top: 30px;
+        border-radius: 5px;
+}
+.paragraphe a:hover {
+        background-color: #7b646a;
+        color:white;
+}
+
+
+
+
+/* HEADER */
+
+
+header img{
+    display: inline-block;
+    width: 14%;
+    margin: 10px 210px 0 50px;
+}
+#navigation{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+}
+#navigation nav {
+    display: inline-block;
+}
+
+#navigation section{
+    display: inline-block;
+    margin-left:130px;
+}
+
+#navigation ul li{
+    display: inline-block;
+}
+
+#navigation nav ul li a {
+    padding :10px;
+    text-transform: uppercase;
+    color:#72647B;
+}
+
+#navigation section ul li .far {
+    padding :10px;
+    font-size: 1.7rem;
+    transition: 1s ease-in-out;
+}
+
+#navigation section ul li .far:hover{
+    color:#7b646a;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+
+/* MAIN */
+
+span{
+    color:#72647B;
+}
+
+ main .paragraphe {
+    text-align: center;
+    margin: auto;
+    
+    letter-spacing: 1,4px;
+    line-height :30px;
+    padding:50px;
+}
+main .paragraphe p{
+    max-width: 80%;
+}
+#titre ,
+#image ,
+#image2,
+#image3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:70% 30% ;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+/*index.html */
+#titre {
+    background-image: url("./../image/image1.jpg");
+    max-width: 100%;
+    height: 600px;
+}
+#titre h1 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top:200px;
+    color:#ffff;
+    font-size: 4rem;
+    transition: 1s ease-in-out;
+}
+#titre h1:hover {
+    color:#72647B;
+    transition: 1s ease;
+}
+#image {
+    background-image: url("./../image/image2.jpg");
+    height: 400px;
+}
+
+#image2{
+    background-image: url("./../image/image3.jpg");
+    height: 400px;
+}
+.presentation {
+    display: inline-block;
+    vertical-align:text-top ;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 6%;
+    width: 37%;
+    margin-left: 9%;
+    
+}
+.presentation h3{
+    padding-top:150px;
+    color:#ffff;
+    font-size: 4rem;
+}
+.presentationSalle{
+    background-image: url('./../image/image4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:50% 50% ;
+        height: 400px;
+        transition: 1s ease-in-out;
+}
+.presentationSalle:hover,
+.presentationTraiteur:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.presentationSalle:hover h3,
+.presentationTraiteur:hover h3{
+    color:#72647B;
+}
+
+.presentationTraiteur{
+    background-image: url('./../image/image5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50% ;
+    height: 400px;
+    transition: 1s ease-in-out;
+}
+
+#image3{
+    background-image: url('./../image/image6.jpg');
+    height: 400px;
+}
+
+
+
+
+
+
+/* salle.html  && traiteur.html && evenement.html*/
+.border{
+    border-bottom: 30px solid #72647B;
+    border-top: 30px solid #72647B;
+}
+
+.grille{
+    margin: 5% 0 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grille img{
+    width: 90%;
+    margin: 0 0 5% 0;
+    transition: 1s ease-in-out;
+}
+
+.grille img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+
+
+
+
+
+/* contact.html*/
+#couleurContact {
+    background-color: #72647B;
+    padding: 50px;
+}
+#contact{
+    margin: auto;
+    text-align: center;
+    color: #ffff;
+}
+#contact h2{
+    padding: 50px;
+    font-size: 5rem;
+}
+#contact p{
+    padding: 18px;
+    font-size: 27px;
+}
+#formulaireContact{
+    background-color: #F3F6F6;
+    max-width: 60%;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+#formulaireContact div input,
+#formulaireContact div textarea,
+#formulaireContact div select,
+#formulaireContact div button{
+    width: 80%;
+    padding:20px;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+#formulaireContact div button{
+    width: 40%;
+    color:#ffff;
+    background-color: #72647B;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer .footer {
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center;
+    width: 25%;
+    margin-top: 40px;
+    margin-bottom:40px ;
+}
+
+footer .footer li{
+   list-style-type: none;
+   line-height : 30px;
+   font-size: 1.5rem;
+}
+
+ footer .footer h3{
+        margin-bottom: 40px;
+        text-transform: uppercase;
+ }
+ footer .footer h3:hover {
+    color:#72647B;
+    
+}
+
+footer .footer li a {
+    display:block;
+    background-color: #72647B;
+    color:white;
+    padding: 8px 40px 8px 40px;
+    border-radius: 5px;
+   
+    
+}
+
+ footer .fab {
+     font-size: 4rem;
+     padding:6px;
+     color:#72647B;
+     transition: 1s ease-in-out;
+ }
+
+ footer .fab:hover {
+    color:#7b646a;
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+footer section p {
+    text-align: center;
+    padding: 15px;
+    background-color: #72647B;
+    color: #ffffff;
+}
